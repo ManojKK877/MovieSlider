@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    margin: 3.2%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+
+nav ul li a {
+    font-size: medium;
+    font-weight: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(88, 86, 86, 0.783);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding: 5px;
+
+}
+
+nav ul li a:hover  {
+
+    border-bottom: 3px solid blue;
+    padding-bottom: 10px;
+    transition: all 0.3s ease 0s;
+    color: black;
+    font-weight: bolder;
+   
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.laptop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.laptoph1{
+    position: relative;
+      top: 40px;
+      border-top: 2px solid;
+      padding: 10px;
+}
+.modern-text {
+    position: relative;
+    width: 30%;
+    line-height: 1.5;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#home {
+    background-image: url('./computer.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95% 90%;
+    height: 600px;
+    border: 2px solid rgb(211, 211, 211);
+
+}
+
+#main {
+    display: flex;
+    margin: 5% 10%;
+    justify-content: center;
+    position: relative;
+}
+
+.WatchButton :hover {
+    cursor: pointer;
+
+}
+.content {
+    background-color: rgb(250, 247, 247);
+}
+
+.material-icons {
+    vertical-align: middle;
+    font-size: small;
+    color: rgb(37, 34, 34);
+    margin-top: 2%;
+}
+
+.material-icons:hover {
+    color: white;
+}
+
+.contentPara {
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: justify;
+}
+
+.title h2 {
+
+    font-size: 30px;
+}
+
+.create {
+    position: relative;
+    top: 50px;
+    z-index: 2;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+.button {
+    border: 1px solid rgb(80 161 224);
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+    word-spacing: 2px;
+    font-size: smaller;
+}
+
+.button1 {
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+    font-size: smaller;
+    background-color: rgb(80 161 224);
+    color: white;
+    margin-left: 2%;
+    word-spacing: 2px;
+
+}
+
+.title {
+    position: relative;
+    top: 12%;
+    line-height: 2.2;
+    margin-left: 10%;
+}
+
+.Menu {
+    margin: 7% 10%;
+}
+
+.ClickButton {
+    padding: 11px 20px;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.ClickButton:hover {
+    background-color: rgb(80 161 224);
+    color: rgba(255, 255, 255, 0.922);
+}
+
+.Click {
+    border: none;
+}
+
+.Click:hover {
+    background-color: rgb(80 161 224);
+    color: rgba(255, 255, 255, 0.922);
+}
+
+.MenuIcon {
+    margin-left: 16%;
+    padding: 1%;
+    border: none;
+}
+
+.MenuIcon:hover {
+    background-color: rgb(80 161 224);
+    color: rgba(255, 255, 255, 0.922);
+}
+
+.ImageInner {
+    margin-top: 2%;
+    opacity: 0.7;
+    height: 265px;
+}
+
+.ImageInner:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.slidefirst {
+    display: flex;
+}
+
+.slider {
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    display: flex;
+}
+
+.manual {
+    position: absolute;
+    top: 104.9%;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+}
+
+.manuals {
+    border: 1px solid rgb(253, 252, 254);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.manuals:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.first {
+    margin-left: 0%;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+.manuals:hover {
+    background-color: rgb(72, 255, 0);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.wrapper input {
+    display: none;
+}
+
+.auto {
+    position: absolute;
+    top: 104.9%;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+}
+
+.auto div {
+    border: 1px solid rgb(255, 254, 254);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 2s;
+    background-color: rgba(240, 236, 225, 0.832);
+}
+
+.auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.auto div.auto1 {
+    background-color: rgb(85, 0, 255);
+
+}
+
+#radio2:checked~.auto div.auto2 {
+    background-color: rgb(21, 0, 255);
+}
+
+#radio3:checked~.auto div.auto3 {
+    background-color: rgb(0, 4, 249);
+}
+
+.arrow {
+    height: 20px;
+    width: 30px;
+    transform: translateY(40%);
+    /* display: inline-block; */
+    display: none
+}
+
+.line1,
+.line2,
+.line3 {
+    height: 30%;
+    width: 100%;
+    margin-top: 2px;
+    background-color: rgb(214, 209, 209);
+    border-radius: 2px;
+}
+
+.star {
+    content: "\2605";
+    color: rgb(211, 227, 107);
+}
+
+.WatchButton {
+    margin-top: 3%;
+    font-size: smaller;
+}
+
+.icons {
+    margin-bottom: 1%;
+    font-size: medium;
+    margin-top: -2px;
+}
+
+.slideImage {
+    width: 35%;
+}
+
+.MenuButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ImagesShow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#add {
+    color: rgb(80 161 224);
+    vertical-align: middle;
+    font-size: medium;
+    margin-top: -2%;
+}
+
+#play {
+    color: white;
+    vertical-align: middle;
+    font-size: medium;
+    margin-top: -2%;
+}
